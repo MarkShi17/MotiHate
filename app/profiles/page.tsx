@@ -6,7 +6,7 @@ export default function profiles() {
         {
             name: "Eric Huang",
             title: "Economics @ Princeton",
-            desc: "Raised a $800k preseed for his consulting startup. Runs a 6 minute mile. Wakes up at 4am to read Ernest Hemmingway",
+            desc: "Raised an $800k pre-seed for his consulting startup. Runs a 6 minute mile. Wakes up at 4am to read Ernest Hemmingway.",
             image: "/huang.jpeg"
         },
         {
