@@ -11,14 +11,14 @@ export default function profiles() {
         },
         {
             name: "Daniel Gao",
-            title: "CS PhD @ Caltech",
+            title: "AI/ML PhD @ Caltech",
             desc: "Accepted to PhD programs at 20. Forbes 30 under 30. Benches 315lbs. Drives a GT3 RS and owns a private island off the coast of Florida.",
             image: "/daniel.png"
         },
         {
             name: "You",
             title: "Unemployed @ Mom's Basement",
-            desc: "???",
+            desc: "Undefined.",
             image: "/default.jpg"
         },
     ]
@@ -27,6 +27,7 @@ export default function profiles() {
             <Link href="/" className="absolute z-10 text-2xl border-2 border-white rounded-lg px-4 py-2 left-12 top-12 text-white   bg-black hover:bg-white hover:text-black transition-colors">
                 Back
             </Link>
+            <h1 className="absolute text-4xl font-bold z-10 left-1/2 top-1/10 -translate-x-1/2 transform">Same Age. Different Work Ethic.</h1>
             <div className="grid grid-cols-3 gap-8 w-full max-w-7xl h-full items-center">
                 {profiles.map((profile, i) => (
                 <div
