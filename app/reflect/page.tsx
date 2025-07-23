@@ -1,25 +1,25 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react"
 import Link from "next/link"
 
 export default function reflect() {
-    const videoRef = useRef<HTMLVideoElement | null>(null);
-    const [error, setError] = useState<string | null>(null);
+    const videoRef = useRef<HTMLVideoElement | null>(null)
+    const [error, setError] = useState<string | null>(null)
 
     useEffect(() => {
         async function enableCamera() {
             try {
-                const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+                const stream = await navigator.mediaDevices.getUserMedia({ video: true })
                 if (videoRef.current) {
-                videoRef.current.srcObject = stream;
+                videoRef.current.srcObject = stream
                 }
             } catch (err) {
-                console.error("no camera:", err);
-                setError("No camera? Watch you reflection in black coward.");
+                console.error("no camera:", err)
+                setError("No camera? Watch you reflection in black coward.")
             }
         }
-        enableCamera();
-    }, []);
+        enableCamera()
+    }, [])
 
     return (
         <main className="flex flex-col items-center justify-center h-screen bg-black">

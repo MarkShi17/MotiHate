@@ -1,23 +1,23 @@
 "use client"
 import Image from "next/image"
 import Link from "next/link"
-import { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react"
 
 export default function pointnlaugh() {
-    const audioRef = useRef<HTMLAudioElement | null>(null);
+    const audioRef = useRef<HTMLAudioElement | null>(null)
 
     useEffect(() => {
         const audio = audioRef.current;
         if (audio) {
             audio.play().catch(err => {
                 console.warn("autoplay failed");
-            });
+            })
         }
-    }, []);
+    }, [])
 
     const play = () => {
         audioRef.current?.play();
-    };
+    }
 
     return (
         <main>

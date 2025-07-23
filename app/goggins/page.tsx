@@ -1,16 +1,16 @@
 "use client"
 //import ReactPlayer from 'react-player'
-import { useRef } from "react";
-import Link from "next/link";
+import { useRef } from "react"
+import Link from "next/link"
 
 export default function goggins() {
-    const videoRef = useRef<HTMLVideoElement | null>(null);
+    const videoRef = useRef<HTMLVideoElement | null>(null)
 
     const play = () => {
         videoRef.current?.play().catch(err => {
-        console.error("Autoplay blocked: ", err);
-        });
-    };
+        console.error("Autoplay blocked: ", err)
+        })
+    }
 
     return (
         <main className="relative w-screen h-screen overflow-hidden">
@@ -26,7 +26,7 @@ export default function goggins() {
                 controls={false}
             />
             <button
-                className="absolute z-10 bottom-10 left-1/2 transform -translate-x-1/2 bg-white px-4 py-2 rounded bold text-xl hover:cursor-pointer hover:bg-black hover:text-white transition-colors"
+                className="absolute z-10 bottom-10 left-1/2 transform -translate-x-1/2 bg-white px-4 py-2 rounded font-bold text-xl hover:cursor-pointer hover:bg-black hover:text-white transition-colors"
                 onClick={play}
             >
                 Play

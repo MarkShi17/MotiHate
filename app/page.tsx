@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 
 export default function Home() {
 
-  const pages = ["/goggins", "/reflect", "/pointnlaugh"]
+  const pages = ["/goggins", "/reflect", "/pointnlaugh", "/abgs"]
   const router = useRouter()
   //basic more: message, abgs (clickable but x popup)
   //add back button to other pages
