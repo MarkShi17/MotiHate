@@ -24,7 +24,7 @@ export default function abgs () {
     return (
         <main>
             <audio ref={audioRef} src="/error.mp3"/>
-            <Link href="/" className="absolute z-10 text-2xl border-2 border-black rounded-lg px-4 py-2 left-12 top-12 bg-white hover:bg-black hover:text-white transition-colors">
+            <Link href="/" className="absolute z-10 text-black text-2xl border-2 border-black rounded-lg px-4 py-2 left-12 top-12 bg-white hover:bg-black hover:text-white transition-colors">
                 Back
             </Link>
             <div className="absolute z-10 top-6 text-white left-1/2 transform -translate-x-1/2">

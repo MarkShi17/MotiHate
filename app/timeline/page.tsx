@@ -20,7 +20,7 @@ export default function timeline() {
 
     return (
         <main className="w-screen h-screen bg-black text-white flex flex-col justify-center items-center">
-            <Link href="/" className="absolute z-10 text-2xl border-2 border-white rounded-lg px-4 py-2 left-12 top-12 text-white   bg-black hover:bg-white hover:text-black transition-colors">
+            <Link href="/" className="absolute z-10 text-2xl border-2 border-white rounded-lg px-4 py-2 left-12 top-12 text-white bg-black hover:bg-white hover:text-black transition-colors">
                 Back
             </Link>
             <div className="text-4xl font-bold text-center px-8 mb-12">

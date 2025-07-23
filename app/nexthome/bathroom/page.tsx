@@ -4,7 +4,7 @@ import Link from "next/link"
 export default function bathroom() {
     return (
         <main>
-            <Link href="/nexthome/bedroom" className="absolute z-10 text-2xl border-2 border-black rounded-lg px-4 py-2 left-12 top-12 bg-white hover:bg-black hover:text-white transition-colors hover: cursor-pointer">
+            <Link href="/nexthome/bedroom" className="absolute z-10 text-black text-2xl border-2 border-black rounded-lg px-4 py-2 left-12 top-12 bg-white hover:bg-black hover:text-white transition-colors hover: cursor-pointer">
                 Back
             </Link>
             <div className="absolute z-10 top-1/20 left-1/2 transform -translate-x-1/2">
