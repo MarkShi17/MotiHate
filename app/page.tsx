@@ -5,7 +5,7 @@ import Link from "next/link"
 
 export default function Home() {
 
-  const pages = ["/reflect", "/goggins", "/abgs", "/profiles", "/pointnlaugh","/nexthome"]
+  const pages = ["/reflect", "/goggins", "/abgs", "/profiles", "/timeline", "/pointnlaugh","/nexthome"]
   const router = useRouter()
   //basic more: message, abgs (clickable but x popup)
   //add back button to other pages
