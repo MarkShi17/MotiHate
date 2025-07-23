@@ -16,7 +16,7 @@ export default function Home() {
 
   return (
     <main className="flex items-center justify-center h-screen">
-      <div className="border-2 border-black rounded-xl hover:bg-black hover:text-white transition-colors">
+      <div className="border-2 border-black rounded-xl hover:bg-red-600 transition-colors">
         <button className="p-20 text-5xl font-bold hover:cursor-pointer" onClick={motivate}>MotiHate Me!</button>
       </div>
     </main>

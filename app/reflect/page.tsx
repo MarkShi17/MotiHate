@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
+import Link from "next/link"
 
 export default function reflect() {
     const videoRef = useRef<HTMLVideoElement | null>(null);
@@ -22,6 +23,9 @@ export default function reflect() {
 
     return (
         <main className="flex flex-col items-center justify-center h-screen bg-black">
+            <Link href="/" className="absolute z-10 text-2xl border-2 border-black rounded-lg px-4 py-2 left-12 top-12 bg-white hover:bg-black hover:text-white transition-colors">
+                Back
+            </Link>
             <p className="text-white">{error}</p>
             {error ? (
                 <></>
